@@ -1,0 +1,5 @@
+http://iot-datamodels.blogspot.co.uk/
+
+curl -X GET http://localhost:8888/door
+
+curl -X POST -H "Content-Type: application/json" -d '{"id":"door_front", "status":"closed"}' http://localhost:8888/door
