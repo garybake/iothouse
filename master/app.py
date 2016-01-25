@@ -10,7 +10,7 @@ class MainHandler(tornado.web.RequestHandler):
 class DoorHandler(tornado.web.RequestHandler):
     def get(self):
         obj = {
-            'id': 'door_front',
+            'id': 'door_frontss',
             'status': 'open',
             'time': str(datetime.now())
         }
@@ -28,7 +28,8 @@ def make_app():
     ], debug=True)
 
 if __name__ == "__main__":
-    print 'restart'
+    print '-Bake IoT Home-'
+    print 'Master Server v.0.1'
     app = make_app()
     app.listen(8888)
     tornado.ioloop.IOLoop.current().start()
